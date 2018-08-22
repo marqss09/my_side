@@ -1,0 +1,26 @@
+body{
+	background-color:#737373;
+	margin:0;
+	display:flex;
+	flex-direction:column;
+	height:100%;
+	}
+nav{
+	background-color:#ccfff5;
+}
+body>header{
+	background-color:#009999;
+}
+#container{
+	background-color:#e6e6ff;
+	display:flex;
+}
+#container>section{
+	background-color:#cc6699;
+}
+#container>aside{
+	background-color:#66ff33;
+}
+body>footer{
+	margin-top:auto;
+}
