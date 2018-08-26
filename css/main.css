@@ -1,26 +1,62 @@
 body{
-	background-color:#737373;
-	margin:0;
+	background-image: url("ironman.png");
+	background-repeat:no-repeat;
+	background-size:cover;
+	margin:0 15%;
 	display:flex;
 	flex-direction:column;
 	height:100%;
 	}
-nav{
-	background-color:#ccfff5;
-}
 body>header{
-	background-color:#009999;
+	color:white;
+	font-family: 'Oswald', sans-serif;
+	text-align:center;
 }
 #container{
-	background-color:#e6e6ff;
+	font-family: 'Baloo Bhai', cursive;
 	display:flex;
+	flex:1;/*rozciągnięcie na całą strone*/
 }
 #container>section{
-	background-color:#cc6699;
+	
+	font-size:18px;
+	width:100%;
+	color:white;
 }
 #container>aside{
-	background-color:#66ff33;
+	color:white;
+	flex: 0 0 25%;
+	min-width:300px;
+	text-decoration: none;
+	transition:0.5s;
 }
+nav{
+	box-shadow: 0px 0px 5px 5px rgba(0,0,0,.16), 0px 0px 10px 5px rgba(0,0,0,.12);
+	z-index: 1;
+}
+nav ul{
+	
+	list-style:none;	
+}
+nav>ul>li{
+	margin: 0px 0px;
+	padding:20 20px;
+	/* background-image: linear-gradient(#f2f2f2, yellow);
+	*/
+}
+nav ul a {
+	color:white;
+	text-decoration: none;
+	transition:0.5s;
+}
+nav li:hover a{
+  color:blue;
+	
+}
+
+
 body>footer{
-	margin-top:auto;
+	margin:50px;
+	color:white;
+	
 }
