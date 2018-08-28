@@ -1,62 +1,84 @@
 body{
-	background-image: url("ironman.png");
+	/*background-image: url("ironman.png");
 	background-repeat:no-repeat;
 	background-size:cover;
-	margin:0 15%;
+	margin:0 15%;*/
+	background-color:#fff;
 	display:flex;
 	flex-direction:column;
 	height:100%;
 	}
 body>header{
-	color:white;
+	color:black;
 	font-family: 'Oswald', sans-serif;
 	text-align:center;
 }
 #container{
+	margin:0 15%;
 	font-family: 'Baloo Bhai', cursive;
 	display:flex;
+	color:black;
 	flex:1;/*rozciągnięcie na całą strone*/
 }
 #container>section{
-	
-	font-size:18px;
+	font-size:20px;
 	width:100%;
-	color:white;
 }
 #container>aside{
-	color:white;
 	flex: 0 0 25%;
 	min-width:300px;
 	text-decoration: none;
 	transition:0.5s;
+	text-align: right;
 }
 nav{
+	margin:auto 0;
+	font-family: 'Muli';
+	font-size: 22px;
 	box-shadow: 0px 0px 5px 5px rgba(0,0,0,.16), 0px 0px 10px 5px rgba(0,0,0,.12);
 	z-index: 1;
 }
 nav ul{
-	
-	list-style:none;	
+	list-style:none;
 }
 nav>ul>li{
-	margin: 0px 0px;
-	padding:20 20px;
+	display:inline-block;
+	padding: 20px;
+
 	/* background-image: linear-gradient(#f2f2f2, yellow);
 	*/
 }
-nav ul a {
-	color:white;
+nav ul a,
+nav .menu-icon{
+	color:black;
 	text-decoration: none;
 	transition:0.5s;
-}
-nav li:hover a{
-  color:blue;
-	
-}
 
+}
+nav li:hover,
+nav .menu-icon:hover {
+box-shadow: 0px 0px 5px 5px rgba(0,0,0,.16), 0px 0px 10px 5px rgba(0,0,0,.12);
+}
+nav li a:hover,
+nav .menu-icon:hover {
 
+	color:red;
+	transition:0.5s;
+}
+nav .menu-icon{
+	display: none;
+	font-size: 30px;
+	margin:15px 50px;
+	text-align: right;
+	padding: 20px;
+}
 body>footer{
 	margin:50px;
-	color:white;
-	
+	color:black;
+}
+
+@media (max-width:800px) {
+	nav .menu-icon{
+		display: inline-block;
+	}
 }
